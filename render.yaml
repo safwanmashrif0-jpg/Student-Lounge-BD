@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: student-lounge-bd-api
+    env: node
+    plan: free
+    root: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_ENV
+        value: production
