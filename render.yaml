@@ -3,7 +3,7 @@ services:
     name: student-lounge-bd-api
     env: node
     plan: free
-    root: server
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /api/status
